@@ -205,14 +205,10 @@ form .checkbox-wrapper input:focus + label::before {
       background: #159c52;
 }
 
-form .input-wrapper input:invalid {
+form .input-wrapper input:required:not(:placeholder-shown):invalid  {
       border: 1px solid #FF1010;
 }
 
-form .input-wrapper input:required:not(placeholder-shown):invalid{
-      border: 2px solid #E6E6F0;
-}
-
-form .input-wrapper input::placeholder {
-      color: #66646aeb;
+input::placeholder{
+   color: rgba(193, 192, 192, 0.705);
 }
