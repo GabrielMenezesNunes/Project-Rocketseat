@@ -31,17 +31,17 @@
                     
                     <div class="input-wrapper">
                         <label for="event-tittle">Título do evento <span>(mínimo 8 caracteres)</span></label>
-                        <input type="text" id="event-tittle"/>
+                        <input type="text" id="event-tittle" required minlength="8" placeholder="Títudo do evento"/>
                     </div>
                     
                     <div class="input-wrapper">
                         <label for="event-link">Link do evento <span>(comece com https://)</span></label>
-                        <input type="url" id="event-link"/>
+                        <input type="url" id="event-link" required  placeholder="Localização do evento"/>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="event-number">Whatsapp para contato <span>(mínimo 8 caracteres)</span></label>
-                        <input type="number" id="event-number"/>
+                        <input type="number" id="event-number" required minlength="8" placeholder="Telefone para contato"/>
                     </div>
 
                     <div class="input-wrapper">
@@ -57,7 +57,8 @@
                             <option>Ao vivo</option>
                         </select>
                     </div>
-
+               
+                  </div>
                 </fieldset>
             
                 <fieldset>
@@ -68,21 +69,50 @@
                         
                         <div class="input-wrapper">
                             <label for="event-email">E-mail do administrador <span>(digite um e-mail válido)</span></label>
-                            <input type="email" id="event-email"/>
+                            <input type="email" id="event-email" required placeholder="E-mail para contato"/>
                         </div>
                     
                         <div class="input-wrapper">
                             <label for="event-password">Senha de acesso para participantes <span>(digite mínimo 8 caracteres)</span></label>
-                            <input type="password" id="event-password"/>
+                            <input type="password" id="event-password" required minlength="8" placeholder="Senha"/>
                         </div>
 
-                        <div class="input-checkbox">
-                            <input type="checkbox" id="event-checkbox"/>
+                        <div class="checkbox-wrapper">
+                              <input type="checkbox" id="event-checkbox"/>
                             <label for="event-checkbox">Evento privado</label>
                         </div>
                     </div>
 
                 </fieldset>
+
+                <fieldset>
+                
+                  <div class="set-form">
+                      
+                      <legend>Dia e hora</legend>
+                      
+                      <div class="colum-3">
+
+                            <div class="input-wrapper">
+                                <label for="event-date">Data</label>
+                                <input type="date" id="event-date" required placeholder="12/12/12"/>
+                            </div>
+
+                            
+                            <div class="input-wrapper">
+                              <label for="event-start">Das</label>
+                              <input type="number" id="event-start" required placeholder="00:00"/>
+                          </div>
+                          
+                          <div class="input-wrapper">
+                              <label for="event-finish">Até</label>
+                              <input type="number" id="event-finish" required placeholder="00:00"/>
+                          </div>
+
+                      </div>
+                      
+                    </div>
+                  </fieldset>
         </div>
         </form>
     </div>
