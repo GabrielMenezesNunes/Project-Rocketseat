@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Avalie sua Mentoria</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="page">
+            <header>
+
+                 <div class="header-wrapper">
+                        <h1>avalie a sua mentoria</h1> 
+                        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p> 
+                        <image src="img/img.svg" alt="Avaliação da mentoria.">
+                  </div>
+
+                  <div class="header-form">
+                        <h2>
+                        Informações pessoais
+                        </h2>
+                  </div>
+
+            </header>
+            <form form="my-form">
+                  
+                  <fieldset>
+                  <div class="fieldset-wrapper">
+
+                        <div class="col-2">
+
+                              <div class="input-wrapper">
+                                    <label for="evaluetion-name">Nome</label>
+                                    <input type="text" id="evaluetion-name" required minlength="2" placeholder="Nome" />
+                              </div>
+      
+                              <div class="input-wrapper">
+                                    <label for="evaluetion-lastname">Sobrenome</label>
+                                    <input type="text" id="evaluetion-lastname" required minlength="2" placeholder="Sobrenome" />
+                              </div>
+
+                        </div>
+
+                        <div class="input-wrapper">
+                              <label for="evaluation-email">Email <span>(digite um email válido)</span></label>
+                              <input type="email" id="evaluation-email" required  placeholder="Email" />
+                        </div>
+                  </div>
+                  </fieldset>
+
+                  <fieldset>
+                        <div class="fieldset-wrapper">
+      
+                              <legend>INFORMAÇÕES DO MENTOR</legend>
+      
+                              <div class="input-wrapper">
+                                    <label for="evaluation-name">Selecione quem foi o seu mentor</label>
+                                    <select id="evaluation-mentor">
+                                          <option value="Fulano A">Fulano A</option>
+                                          <option value="Fulano B">Fulano B</option>
+                                          <option value="Fulano C">Fulano C</option>
+                                    </select>
+                              </div>
+            
+                              <div class="input-wrapper">
+                                    <label for="evaluation-feedback">Feedback sobre o mentor</label>
+                                    <textarea  id="evaluation-fadback" ></textarea>
+                               </div>
+      
+      
+                              <div class="checkbox-wrapper">
+                                    <input type="checkbox" id="evaluation-email" />
+                                    <label for="evaluation-email">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</span></label>
+                              </div>
+                        </div>
+                        </fieldset>
+
+                        <fieldset>
+                              <div class="fieldset-wrapper">
+            
+                                    <legend>Agendando próxima mentoria</legend>
+      
+                                    <div class="col-timeline">
+
+                                          <div class="input-wrapper">
+                                                <label for="evaluetion-name">Data</label>
+                                                <input type="date" id="evaluetion-name" required placeholder="01/01/2000"/>
+                                          </div>
+                                          
+                                          <div class="col-time">
+                                                <div class="input-wrapper">
+                                                      <label for="evaluetion-lastname">Das</label>
+                                                      <input type="time" id="evaluetion-start" required />
+                                                </div>
+      
+                                                <div class="input-wrapper">
+                                                      <label for="evaluetion-name">Até</label>
+                                                      <input type="time" id="evaluetion-end" required  />
+                                                </div>
+                                          </div>
+                                          
+                                    </div>
+
+                                    <button form="my-form">Salvar</button>
+                                    
+                              </div>
+                        </fieldset>
+            </form>
+      </div>
+</body>
+</html>
